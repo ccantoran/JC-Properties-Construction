@@ -319,8 +319,9 @@ h2{
     .patio>img, .interior>img{
         object-fit: contain;
         height: auto;
+    }
 }    
-@media (min-width:520px) and (max-width: 640px){
+@media (min-width:521px) and (max-width: 640px){
         .patio, .interior{
             --num-cols:2;
             --row-height: 250px;
@@ -330,7 +331,7 @@ h2{
 
 
 /*//////////////////////
-SECTION 4
+SECTION 4       BEFORE & AFTER
 ///////////////////////*/
 .section4{
     height:600px;
@@ -389,7 +390,7 @@ SECTION 5   CONTACT US
         padding: 3% 5% 0 5%;
     }
 }
-@media screen and (max-width: 520px){
+@media (min-width:426px) and (max-width: 520px){
     .section5>div{
         font-size: 1.3em;
     }
@@ -454,7 +455,7 @@ footer>div>span{
     border-right:rgb(255, 213, 61) solid;
     padding-right:5px;
 }
-    @media screen and (max-width: 480px){
+    @media (min-width:341px) and (max-width: 480px){
         .footer{
             height:auto;
             width:auto;
@@ -489,7 +490,7 @@ footer>div>span{
             border:none;
         }    
     }
-        @media screen and (max-width: 595px){
+        @media (min-width:480px) and (max-width: 595px){
             .firstdiv{
                 font-size: .9em;
             }
