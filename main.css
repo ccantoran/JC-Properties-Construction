@@ -10,6 +10,7 @@ NAV BAR
 ////////////////*/
 nav{
     margin-top:20px;
+    color:transparent;
 }
 .mainMenu>ul>li{
     list-style-type: none;
@@ -20,6 +21,9 @@ nav{
 }
 .closeMenu, .openMenu{
     display:none;
+}
+.mainMenu{
+    display:block;
 }
 .mainMenu>ul{
     display: flex;
@@ -38,26 +42,26 @@ a:visited{
 a:hover{
     color:rgb(255, 213, 61);
 }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 525px){
          nav{
             position: fixed;
             width: 100%; 
             margin:0;
             background:rgb(255, 213, 61);
             height:40px;
+            text-align: center;
         } 
         .mainMenu>ul{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width:auto;
             padding-left:0;
-            border:none;
         }
         .mainMenu{
             max-height:300px;
             position:absolute;
-            display:block;
+            display:flex;
+            justify-content: space-around;
             background:rgb(255, 213, 61);
             width:100%;
             display:none;
@@ -178,23 +182,24 @@ SECTION 2
 }
 .section2>div{
     display:flex;
-    height:60%;
-    width:100%;
-    margin-top:50px;
+    align-items: center;
+    height:50%;
+    width:auto;
+    margin: 50px 5% 0 5%;
     background:rgb(64,176,233);
     font-family: "Open Sans";
 }
-.section2>div>div{
-    width:50%;
-    display:flex;
-    align-self: center;
-    color:white;
-}
-.S2image{
-    justify-content: center;
-}
 .S2word{
-    padding-right:70px;
+    width:80%;
+    color:white;
+    margin:0 15%;
+    text-align: center;
+}
+@media screen and (max-width: 480px){
+    .S2word{
+        font-size: .5em;
+        margin:0;
+    }
 }
     @media screen and (max-width: 640px){
         .section2{
@@ -217,22 +222,20 @@ SECTION 2
             text-align: center;
         }
         .S2word{
-            margin-bottom: 30px;
             height:auto;
             font-size: .8em;
             text-align: center;
+            margin: 10px 0 15px 0;
         }
     }
-        @media screen and (max-width: 640px){
+        @media screen and (max-width: 860px){
+            .section2{
+                height:550px
+            }
             .S2word{
-                font-size: .8em;
+                font-size: .9em;
             }
         }
-            @media screen and (max-width: 840px){
-                .S2word{
-                    font-size: .9em;
-                }
-            }
             
 
 /*/////////////////////           
@@ -320,6 +323,41 @@ SECTION 4
         }
     }
 
+
+/*////////////////////////////////////////
+SECTION 5   CONTACT US
+////////////////////////////////////////*/
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:400px;
+}
+.section5>div{
+    font-family: "Open Sans";
+    font-size: 25px;
+    color:white;
+    font-weight: 550;
+    margin-top:5%;
+    padding-top:3%;
+    width:80%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFD53D;
+}
+.section5>div>div{
+    font-weight: 700;
+    margin-top:1%
+}
+@media screen and (max-width: 520px){
+    .section5>div{
+        font-size: 1.3em;
+    }
+}
+
 /*//////////////////////
 FOOTER
 ////////////////////////*/
@@ -327,7 +365,7 @@ FOOTER
 
 footer{
     display:flex;
-    height:120px;
+    height:140px;
     background:rgb(64,176,233);
 }
 .firstdiv{
@@ -414,3 +452,8 @@ footer>div>span{
             border:none;
         }    
     }
+        @media screen and (max-width: 595px){
+            .firstdiv{
+                font-size: .9em;
+            }
+        }
